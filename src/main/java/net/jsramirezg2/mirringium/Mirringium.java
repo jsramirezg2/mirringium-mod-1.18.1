@@ -1,6 +1,8 @@
 package net.jsramirezg2.mirringium;
 
 import net.fabricmc.api.ModInitializer;
+import net.jsramirezg2.mirringium.block.ModBlocks;
+import net.jsramirezg2.mirringium.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,6 +14,8 @@ public class Mirringium implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+
 	}
 }
