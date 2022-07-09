@@ -12,6 +12,8 @@ public class ModItems {
     public static final Item RAW_MIRRINGIUM = registerItem("raw_mirringium",
             new Item(new FabricItemSettings().group(ModItemGroups.MOD_TAB)));
 
+    public static final Item MIRRINGIUM_CRYSTAL = registerItem("mirringium_crystal",
+            new Item(new FabricItemSettings().group(ModItemGroups.MOD_TAB)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Mirringium.MOD_ID, name), item);
